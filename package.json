@@ -15,7 +15,8 @@
     "lint:eslint": "eslint",
     "lint:nuxt": "nuxi typecheck",
     "lint": "npm run lint:eslint && npm run lint:nuxt",
-    "lintfix": "npm run lint:eslint -- --fix"
+    "lintfix": "npm run lint:eslint -- --fix",
+    "test": "echo no test"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
