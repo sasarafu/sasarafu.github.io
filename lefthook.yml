@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    lintfix:
+      run: npm run lintfix {staged_files}
+      stage_fixed: true

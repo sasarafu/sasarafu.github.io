@@ -2,16 +2,34 @@
   "name": "sasarafu-github-io",
   "type": "module",
   "private": true,
+  "packageManager": "npm@11.6.1+sha512.ee20d21c3a2ea7ab8c409dfbc96ae17ea71b3211745047c645aa7a36ff9a29072b2095e50a2d9c29b8fbe5606688795cc2c402cbf534cc4c0365d031e87fd56b",
+  "engines": {
+    "node": "24"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint:eslint": "eslint",
+    "lint:nuxt": "nuxi typecheck",
+    "lint": "npm run lint:eslint && npm run lint:nuxt",
+    "lintfix": "npm run lint:eslint -- --fix",
+    "test": "echo no test"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.16",
     "nuxt": "^4.2.0",
+    "tailwindcss": "^4.1.16",
     "vue": "^3.5.22",
     "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.10.0",
+    "eslint": "^9.39.0",
+    "lefthook": "^2.0.2",
+    "typescript": "^5.9.3",
+    "vue-tsc": "^3.1.3"
   }
 }
