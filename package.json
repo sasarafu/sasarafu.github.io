@@ -2,6 +2,10 @@
   "name": "sasarafu-github-io",
   "type": "module",
   "private": true,
+  "packageManager": "npm@11.6.1+sha512.ee20d21c3a2ea7ab8c409dfbc96ae17ea71b3211745047c645aa7a36ff9a29072b2095e50a2d9c29b8fbe5606688795cc2c402cbf534cc4c0365d031e87fd56b",
+  "engines": {
+    "node": "24"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
